@@ -1,0 +1,219 @@
+react
+
+
+reaci is javascript frontend library, and it is a single page web application
+
+basic                       library                                               framework
+
+
+meaning             library is a collection of                     it is a piece of code that indicates the architecture 
+                    reusable function used by the                  of project
+                    computer program
+
+
+inversion          with a library , you are in- charge        in charge not you, framework teels you where to put a specific post of 
+of control         means- you can choose where and when         your code
+                   you want to insert or use the library
+
+function            they are imp in program linking and       provided standard way to build and deploy app 
+                    binding process
+
+Ex                  React, JQuery                             Angular, Vue.js
+
+project creation using react (2 ways)
+
+a) create-react-app
+b) Vite
+
+
+
+
+
+Node
+node -v (checking current version of node)
+npm - (node package manager) to manage packages and libraries of node
+npm -v (current v)
+
+npx (node package execute) no install, but we can execute latest version
+npm -global (same version)
+npx - local (latest version)
+
+npm install -g create-react- app
+create-react-app my-app
+
+
+
+install - npx create-react- app app-name
+          npm install-g create-react-app
+          create-react- app app-name
+
+project structure
+
+to run the project - npm start
+
+README.md- so basic details about the project
+package.json - installed packages - file used to manage lib and package - npm
+
+
+package-lock.json - to lock the installed version
+gitignore - to ignore some files
+
+node modules - to store copies of all installed packages and libraries
+
+
+
+components are two types
+
+class based components - object oriented (Angular)
+function based components - procedural prg (React)
+
+DOM
+------
+real DOM
+virtual DOM - (react)
+
+              real dom                                                  virtual dom 
+ real dom represent actual structure of the web page            virtual dom represent the virtual/memory representation of the webpage
+
+ dom manipulation is very expensive                             dom manipulation is very easy 
+
+ more memory wastage                                            no memory wastage
+
+ it updates slow                                                faster 
+
+ browser - js, html, css, compiler
+ jsx -babel lib - js & html = transpiling
+
+ transpiling - is a term coined by the community to refer to the process of using a tool 
+               to convert a program's source code from one form to another form.
+
+variables - to store data - state
+
+state  - object used to store a piece of data
+
+class - statefull components (inbuild state)
+function - stateless components (no inbuild state)
+
+statefull - it have inbuild state
+stateless - it doesn't have inbuild state
+
+hook(lifecycle method) - extra function to create state in react 
+                -useState - to create a state in react
+                -useEffect - to create a sideeffect in react - has two argument 1) arrow, 2) empty array
+
+advantages of using React
+------------------------------
+react is using virtual dom
+react components are reusable
+fast rendering 
+redux
+
+
+
+features of react
+------------------
+
+hooks are available
+JSX ( javascript & xml)
+virtual dom
+
+
+jsx - javascript & xml is combination of javascript and html
+
+Events 
+---------
+There are 2 types of events in react
+
+with target value - onChange
+without target value - onClick
+
+
+datasharing in react - parent to child data sharing
+props (properties)
+
+js destructing 
+---------------
+
+user = {name:'anu', place:'kollam'}
+
+name = user.name   // both are same
+{name}=user        // both are same
+
+place = user.place
+{place}=user
+
+{name, place}= user
+
+
+props = {data:uname, data1:'calicut'}
+{data, data1}
+
+
+
+
+netlify
+vercel
+
+conditional rendering
+----------------------
+
+if 
+
+condition && (code)
+
+
+else if 
+
+condition ?(code):(code)
+
+
+asynchronous code handle
+--------------------------
+promise - .then catch -      more than two times .then we are using is called chaining. to avoid this we use async await
+
+async await - to store data
+
+to avoid the chaining process in react we are using async await
+it will act as more synchronous manner
+
+async await is a js feature
+
+drawback of fetch
+-------------------
+
+only providing responses data.. not getting other information like status code, url..
+it will not support all browsers
+very low error handling capacity
+
+Axios-react library
+--------------
+provide all information about the api call
+it will support all browsers
+faster and accurate
+
+
+install - npm i libraryname
+
+basic methods in Axios
+
+get - retrive data
+post - creating data
+put - fully updated
+patch - partial updation
+delete - delete
+
+Re-direction in react
+-----------------------
+
+react-router-dom -->library used for redirection 
+
+Route, Routes, BrowserRouter -->To apply redirection in react, react-router-dom 3 inbuilt component
+
+
+
+
+2 ways of re-direction
+- link 
+- function
+
+useParams()- its react-router-dom hook

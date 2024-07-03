@@ -1,11 +1,15 @@
 import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
     <div>
-      <h5>  <Navbar className="bg-body-tertiary">
+    
+        <Link to={'/'} style={{textDecoration:'none'}}  > 
+
+         <Navbar className="bg-body-tertiary">
         <Container>
           <Navbar.Brand href="#home">
             <img
@@ -15,11 +19,12 @@ function Header() {
               height="30"
               className="d-inline-block align-top"
             />{' '}
-            Flipkart
+           E-cart
           </Navbar.Brand>
         </Container>
-      </Navbar></h5>
+      </Navbar>
 
+      </Link>
     </div>
   )
 }
